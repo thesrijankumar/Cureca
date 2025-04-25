@@ -9,3 +9,5 @@ This is my first full stack project, building up an currecy exchange calculator 
 * we shall be using Vite for Frontend, and Axios to fetch APIs
 * using [Exchange Rate APi](https://exchangeratesapi.io/)
 it's free, but it does requires sign up
+
+## the project is live, check it out [here](https://cureca.onrender.com/)
