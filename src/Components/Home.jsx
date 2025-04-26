@@ -37,7 +37,7 @@ function Home() {
 
     return(
         <>
-        <div className="flex mt-[7%] justify-center flex align-center">        
+        <div className="mt-[7%] justify-center flex align-center">        
             <div id="main-box" className="text-white m-3 w-[80%] align-center justify-center p-6 flex border rounded-2xl">
 
                 <div id="from-box">
@@ -53,6 +53,7 @@ function Home() {
                             <option value="AUD">AUD</option>
                             <option value="CAD">CAD</option>
                             <option value="CNY">CNY</option>
+                            <option value="NPR">NPR</option>
                         </select>
                     </div>
                     <div id="input-amount-here" className="border rounded-xl">
@@ -86,6 +87,7 @@ function Home() {
                                 <option value="AUD">AUD</option>
                                 <option value="CAD">CAD</option>
                                 <option value="CNY">CNY</option>
+                                <option value="NPR">NPR</option>
                             </select>
                         </div>
                     </div>
