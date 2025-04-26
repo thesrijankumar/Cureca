@@ -38,13 +38,13 @@ function Home() {
 
     return(
         <>
-        <div className="flex  justify-center align-center dark:bg-[#121212] bg-gray-300 h-[100vh]">        
-            <div id="main-box" className=" m-3 w-[80%] align-center justify-center p-6 flex border-2 rounded-2xl dark:border-white border-black h-34 mt-40 ">
+        <div className="flex  justify-center  lg:dark:bg-[#121212]  bg-white lg:h-[100vh] h-screen w-screen dark:bg-[#212121]  ">        
+            <div id="main-box" className=" w-[88%]  align-center justify-center p-6 flex border-2 rounded-2xl dark:border-white border-black lg:h-34 mt-40 lg:flex-row flex-col h-100 ">
 
-                <div className=" w-60 h-20 flex rounded-xl  ">
-                    <div id="currency-selector-here" className="flex dark:bg-white dark:text-white bg-gray-900 relative w-[40%] h-[100%] px-1 rounded-l-xl">
+                <div className=" w-64 h-20 flex rounded-xl  mx-[auto]  ">
+                    <div id="currency-selector-here" className="flex dark:bg-white dark:text-white lg:bg-gray-900  relative  lg:w-[40%] lg:h-[100%] lg:px-1 lg:rounded-l-xl rounded-l-xl w-[40%]">
                             <select 
-                                className="dark:text-black text-white bg-gray-900 outline-none dark:bg-white relative h-[100%] w-[100%] text-center rounded-l-xl text-xl "
+                                className="dark:text-black  text-white bg-gray-900 outline-none  dark:bg-white relative h-[100%] w-[90%] text-center rounded-l-xl text-xl "
                                 value={fromCurrency}
                                 onChange={(e) => setFromCurrency(e.target.value)}> 
                                 <option value="USD">USD</option>
@@ -57,9 +57,9 @@ function Home() {
                             </select>
                     </div>
 
-                    <div className=" relative h-[100%] w-[70%] ml-2 dark:border-white border-gray-900 border-3 dark:text-white text-gray-800 rounded-r-xl">
+                    <div className=" relative h-[100%] w-[70%] ml-2 dark:border-white border-gray-900 border-3 dark:text-white text-gray-800 rounded-r-xl ">
                     <input 
-                        className=" relative h-[100%] w-[100%] text-3xl ml-2     appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none [-moz-appearance:textfield] outline-none"
+                        className=" relative h-[100%] w-[100%] text-3xl ml-2 appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none [-moz-appearance:textfield] outline-none"
                         type="number" value={inputAmount} 
                         onChange={changeInputValue} />
                         
@@ -68,16 +68,16 @@ function Home() {
 
 
 
-                <div className=" m-[auto] text-5xl dark:text-white text-gray-800"><FaArrowRightArrowLeft /></div>
+                <div className=" lg:m-[auto] my-10 mx-[auto]  h-14 w-20 flex items-center justify-center lg:text-5xl dark:text-white text-gray-800 rotate-90 lg:rotate-0 text-3 xl"><FaArrowRightArrowLeft /></div>
 
 
-                <div className=" w-80 h-22 gap-2 flex relative ">
+                <div className=" w-64 h-22 gap-2 flex relative mx-[auto] ">
 
-                    <div className="dark:bg-white dark:text-black  rounded-l-xl border-gray-900 border-3 dark:border-none  relative h-[100%] w-[90%] flex items-center justify-center text-2xl "> {convertedAmount} </div >
+                    <div className="dark:bg-white dark:text-black  rounded-l-xl border-gray-900 border-3 dark:border-none  relative h-[100%] w-[90%] flex items-center justify-center text-2xl  "> {convertedAmount} </div >
 
-                    <div className="dark:bg-white bg-gray-900 relative h-[100%] w-[40%]  rounded-r-xl">
+                    <div className="dark:bg-white bg-gray-900 relative lg:h-[100%] lg:w-[50%] w-30  rounded-r-xl">
                             <select 
-                                className="dark:text-black text-white relative h-[100%] w-[80%] text-xl ml-1 p-2  "
+                                className="dark:text-black text-white dark:bg-white bg-black relative outline-none h-[100%] w-[80%] text-xl ml-1 p-2  "
                                 value={toCurrency}
                                 onChange={(e) =>{ 
                                     setToCurrency(e.target.value)
