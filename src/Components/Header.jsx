@@ -9,7 +9,7 @@ const Header = () => {
     return(
         <>
         
-            <div className="flex justify-between px-7 text-black bg-white dark:text-white dark:bg-[#212121]  w-[100%] h-20  fixed top-0">
+            <div className="flex justify-between px-7 text-black bg-white dark:text-white dark:bg-[#212121]  w-[100%] h-20  fixed top-0 z-10">
                 <Link to = '/'> <h1 className="text-5xl weight- w-50 h-[100%] relative flex justify-center items-center  ">cureca <span className=" mt-4"> <TiArrowRepeat /> </span></h1> </Link>
                
                <div className=" h-[100%] w-60 flex relative list-none text-3xl items-center justify-around ">
