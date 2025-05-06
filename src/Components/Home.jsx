@@ -17,7 +17,7 @@ function Home() {
 
     useEffect(() => {
         if (!rates[fromCurrency] || !rates[toCurrency] || inputAmount === 0) {
-            setConvertedAmount(0); // Return 0 if conversion is not possible
+            setConvertedAmount(0); 
             return;
         }
     
