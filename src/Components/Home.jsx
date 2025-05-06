@@ -54,6 +54,7 @@ function Home() {
                                 <option value="AUD">AUD</option>
                                 <option value="CAD">CAD</option>
                                 <option value="CNY">CNY</option>
+                                <option value="NPR">NPR</option>
                             </select>
                     </div>
 
@@ -89,6 +90,7 @@ function Home() {
                                 <option value="AUD">AUD</option>
                                 <option value="CAD">CAD</option>
                                 <option value="CNY">CNY</option>
+                                <option value="NPR">NPR</option>
                             </select>
 
                     </div>
